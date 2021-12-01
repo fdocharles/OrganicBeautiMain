@@ -14,6 +14,7 @@
 		753CDADC2757E05D00FFAA87 /* OrganicBeauti2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 753CDADA2757E05D00FFAA87 /* OrganicBeauti2.xcdatamodeld */; };
 		753CDADE2757E05D00FFAA87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753CDADD2757E05D00FFAA87 /* Assets.xcassets */; };
 		753CDAE12757E05D00FFAA87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753CDADF2757E05D00FFAA87 /* LaunchScreen.storyboard */; };
+		753CDAE92757E10400FFAA87 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753CDAE82757E10400FFAA87 /* AccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		753CDADD2757E05D00FFAA87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		753CDAE02757E05D00FFAA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		753CDAE22757E05D00FFAA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		753CDAE82757E10400FFAA87 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +60,9 @@
 		753CDAD02757E05D00FFAA87 /* OrganicBeauti2 */ = {
 			isa = PBXGroup;
 			children = (
+				753CDAEA2757E11400FFAA87 /* ViewController */,
 				753CDAD12757E05D00FFAA87 /* AppDelegate.swift */,
 				753CDAD32757E05D00FFAA87 /* SceneDelegate.swift */,
-				753CDAD52757E05D00FFAA87 /* ViewController.swift */,
 				753CDAD72757E05D00FFAA87 /* Main.storyboard */,
 				753CDADD2757E05D00FFAA87 /* Assets.xcassets */,
 				753CDADF2757E05D00FFAA87 /* LaunchScreen.storyboard */,
@@ -68,6 +70,15 @@
 				753CDADA2757E05D00FFAA87 /* OrganicBeauti2.xcdatamodeld */,
 			);
 			path = OrganicBeauti2;
+			sourceTree = "<group>";
+		};
+		753CDAEA2757E11400FFAA87 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				753CDAE82757E10400FFAA87 /* AccountViewController.swift */,
+				753CDAD52757E05D00FFAA87 /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				753CDAD62757E05D00FFAA87 /* ViewController.swift in Sources */,
+				753CDAE92757E10400FFAA87 /* AccountViewController.swift in Sources */,
 				753CDAD22757E05D00FFAA87 /* AppDelegate.swift in Sources */,
 				753CDADC2757E05D00FFAA87 /* OrganicBeauti2.xcdatamodeld in Sources */,
 				753CDAD42757E05D00FFAA87 /* SceneDelegate.swift in Sources */,
