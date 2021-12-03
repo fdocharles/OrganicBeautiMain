@@ -10,10 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var signinButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }//
+        
+        //Custom UI element styles
+        //SignIn button
+        signinButton.layer.cornerRadius = 25.0
+    }
 
 
 }
