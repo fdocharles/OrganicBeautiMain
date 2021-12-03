@@ -15,6 +15,7 @@
 		753CDADE2757E05D00FFAA87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753CDADD2757E05D00FFAA87 /* Assets.xcassets */; };
 		753CDAE12757E05D00FFAA87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753CDADF2757E05D00FFAA87 /* LaunchScreen.storyboard */; };
 		753CDAE92757E10400FFAA87 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753CDAE82757E10400FFAA87 /* AccountViewController.swift */; };
+		759DEE5E2759B42A0018A288 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DEE5D2759B42A0018A288 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		753CDAE02757E05D00FFAA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		753CDAE22757E05D00FFAA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		753CDAE82757E10400FFAA87 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		759DEE5D2759B42A0018A288 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				753CDAE82757E10400FFAA87 /* AccountViewController.swift */,
 				753CDAD52757E05D00FFAA87 /* ViewController.swift */,
+				759DEE5D2759B42A0018A288 /* SignUpViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				759DEE5E2759B42A0018A288 /* SignUpViewController.swift in Sources */,
 				753CDAD62757E05D00FFAA87 /* ViewController.swift in Sources */,
 				753CDAE92757E10400FFAA87 /* AccountViewController.swift in Sources */,
 				753CDAD22757E05D00FFAA87 /* AppDelegate.swift in Sources */,
