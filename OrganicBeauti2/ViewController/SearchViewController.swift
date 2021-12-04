@@ -9,10 +9,11 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-
-    @IBOutlet weak var collectionView: UICollectionView!
     
-    let searchController = UISearchController()
+    var filteredProducts: [Product] = []
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,20 +21,42 @@ class SearchViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
+        searchBar.delegate = self as! UISearchBarDelegate
         
-        searchController 
+        filteredProducts = products
+        
+    }
+    
+    @IBAction func didChangeSegment(_ sender: UISegmentedControl){
+        if sender.selectedSegmentIndex == 0 {
+             filteredProducts = products
+        }
+        else if sender.selectedSegmentIndex == 1{
+            filteredProducts = clenserProducts
+        }
+        else if sender.selectedSegmentIndex == 2{
+            filteredProducts = exProducts
+        }
+        else if sender.selectedSegmentIndex == 3{
+            filteredProducts = tonerProducts
+        }
+        else if sender.selectedSegmentIndex == 4{
+            filteredProducts = maskProducts
+        }
+        
+        self.collectionView.reloadData()
     }
 
 }
 
 extension SearchViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return products.count
+        return filteredProducts.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCollectionViewCell", for: indexPath) as! ProductCollectionViewCell
-        cell.setup(with: products[indexPath.row])
+        cell.setup(with: filteredProducts[indexPath.row])
         return cell
     }
 }
@@ -48,4 +71,24 @@ extension SearchViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(products[indexPath.row])
     }
+}
+
+extension SearchViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredProducts = []
+        
+        if searchText == ""{
+            filteredProducts = products
+        }
+        for word in products {
+            if (word.title.uppercased().contains(searchText.uppercased()) ||  word.brand.uppercased().contains(searchText.uppercased())){
+                filteredProducts.append(word)
+            }
+        }
+        
+        self.collectionView.reloadData()
+    }
+    
+    
+    
 }
