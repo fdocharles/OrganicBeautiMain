@@ -16,6 +16,9 @@
 		753CDAE12757E05D00FFAA87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753CDADF2757E05D00FFAA87 /* LaunchScreen.storyboard */; };
 		753CDAE92757E10400FFAA87 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753CDAE82757E10400FFAA87 /* AccountViewController.swift */; };
 		759DEE5E2759B42A0018A288 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DEE5D2759B42A0018A288 /* SignUpViewController.swift */; };
+		B4D16870275AB608009C192B /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D1686F275AB608009C192B /* ProductCollectionViewCell.swift */; };
+		B4D16872275AB6AC009C192B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D16871275AB6AC009C192B /* SearchViewController.swift */; };
+		B4D16874275AB934009C192B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D16873275AB934009C192B /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		753CDAE22757E05D00FFAA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		753CDAE82757E10400FFAA87 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		759DEE5D2759B42A0018A288 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B4D1686F275AB608009C192B /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		B4D16871275AB6AC009C192B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B4D16873275AB934009C192B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,8 @@
 				753CDADF2757E05D00FFAA87 /* LaunchScreen.storyboard */,
 				753CDAE22757E05D00FFAA87 /* Info.plist */,
 				753CDADA2757E05D00FFAA87 /* OrganicBeauti2.xcdatamodeld */,
+				B4D1686F275AB608009C192B /* ProductCollectionViewCell.swift */,
+				B4D16873275AB934009C192B /* Product.swift */,
 			);
 			path = OrganicBeauti2;
 			sourceTree = "<group>";
@@ -80,6 +88,7 @@
 				753CDAE82757E10400FFAA87 /* AccountViewController.swift */,
 				753CDAD52757E05D00FFAA87 /* ViewController.swift */,
 				759DEE5D2759B42A0018A288 /* SignUpViewController.swift */,
+				B4D16871275AB6AC009C192B /* SearchViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -157,6 +166,9 @@
 			files = (
 				759DEE5E2759B42A0018A288 /* SignUpViewController.swift in Sources */,
 				753CDAD62757E05D00FFAA87 /* ViewController.swift in Sources */,
+				B4D16874275AB934009C192B /* Product.swift in Sources */,
+				B4D16872275AB6AC009C192B /* SearchViewController.swift in Sources */,
+				B4D16870275AB608009C192B /* ProductCollectionViewCell.swift in Sources */,
 				753CDAE92757E10400FFAA87 /* AccountViewController.swift in Sources */,
 				753CDAD22757E05D00FFAA87 /* AppDelegate.swift in Sources */,
 				753CDADC2757E05D00FFAA87 /* OrganicBeauti2.xcdatamodeld in Sources */,
