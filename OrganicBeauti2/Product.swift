@@ -56,3 +56,12 @@ let maskProducts: [Product] = [
     Product(title: "Facial Masque" ,brand: "Sukin" , price: "$31.99" , image: #imageLiteral(resourceName: "HYDRATING FACIAL MASQUE  SIGNATURE 100ML"))
 ]
 
+let newProducts: [Product] = [
+    Product(title: "Cleansing Water" , brand: "Sukin" , price: "$14.99" , image :#imageLiteral(resourceName: "MICELLAR CLEANSING WATER 250ML")),
+    Product(title: "Cleansing Lotion" ,brand: "Sukin" , price: "$26.99" , image: #imageLiteral(resourceName: "GEL CLEANSER  SENSITIVE 125ML")),
+    Product(title: "Facial Cleanser" ,brand: "Sukin" , price: "$22.99" , image:#imageLiteral(resourceName: "FOAMING FACIAL CLEANSER PUMP  SIGNATURE 125ML")),
+    Product(title: "Cleansing Oil" ,brand: "Sukin" , price: "$28.99" , image: #imageLiteral(resourceName: "PURIFYING GEL CLEANSER  OIL BALANCING 125ML")),
+    Product(title: "Gel Cleanser" ,brand: "Sukin" , price: "$24.99" , image: #imageLiteral(resourceName: "RADIANCE GEL CLEANSER  BRIGHTENING  125ML"))
+]
+
+

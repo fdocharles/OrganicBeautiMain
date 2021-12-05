@@ -21,4 +21,5 @@ class ProductCollectionViewCell: UICollectionViewCell {
         productBrandLabel.text = product.brand
         productPriceLabel.text = product.price
     }
-}
+    
+    }
