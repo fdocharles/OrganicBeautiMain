@@ -642,7 +642,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="iSk-gc-TeW"/>
                     <connections>
-                        <outlet property="newProductTable" destination="UiH-AJ-UmZ" id="8Tl-m2-kwc"/>
+                        <outlet property="tableView" destination="UiH-AJ-UmZ" id="40o-O7-DbZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ylz-7r-5NB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -727,6 +727,7 @@
         <!--Navigation Controller-->
         <scene sceneID="w1b-8N-0Rk">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tbi-kR-QgV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="B6W-8Y-ryB" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="SsZ-sT-qJs">
                         <color key="badgeColor" red="0.9917870164" green="0.93327933549999997" blue="0.92103117700000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -740,7 +741,6 @@
                         <segue destination="vco-96-pwI" kind="relationship" relationship="rootViewController" id="Y2m-p7-Cl3"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tbi-kR-QgV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1700.0000000000002" y="878.57142857142856"/>
         </scene>
