@@ -10,6 +10,6 @@ import Foundation
 
 struct Order : Codable{
     var orderItems: [OrderItem]
-    var paymentMethod: String
     var shippingAddress: Address
+    var paymentMethod: PaymentCard
 }

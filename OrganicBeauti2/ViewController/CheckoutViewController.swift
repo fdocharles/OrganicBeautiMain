@@ -31,6 +31,10 @@ class CheckoutViewController: UIViewController {
     @IBOutlet weak var postalCodeLbl: UILabel!
     
     
+    
+    @IBOutlet weak var paymentMethodCardLbl: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -59,6 +63,10 @@ class CheckoutViewController: UIViewController {
         if let storedObject = UserDefaults.standard.object(forKey: "CustomerCurrentOrder") as? Data,
             let decodedOrder = try? decoder.decode(Order.self, from: storedObject)
         {
+            
+            print("***********")
+            print(decodedOrder)
+            
             for item in decodedOrder.orderItems
             {
                 subTotal = subTotal + (item.price * Double(item.qty))
@@ -73,6 +81,8 @@ class CheckoutViewController: UIViewController {
             
             address1Lbl.isHidden = address1Lbl.text!.isEmpty
             cityProvinceLbl.isHidden = cityProvinceLbl.text!.isEmpty
+            
+            paymentMethodCardLbl.text = "**** **** **** \(decodedOrder.paymentMethod.cardNumber.suffix(4))"
             
             
         }
