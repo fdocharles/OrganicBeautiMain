@@ -9,7 +9,7 @@
 import Foundation
 
 struct CurrentSession: Codable {
-    var User : User
-    var Order: Order
+    var user : User
+    var order: Order
 }
 

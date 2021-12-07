@@ -9,5 +9,5 @@
 import Foundation
 
 struct Order : Codable{
-    var OrderItems: [OrderItem]
+    var orderItems: [OrderItem]
 }

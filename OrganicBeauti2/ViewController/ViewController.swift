@@ -16,9 +16,9 @@ class ViewController: UIViewController {
     
     //Users
     var users = [
-        User(Name: "Tessie Black", Email: "tblack@gmail.com", Phone: "(226) 234-7896", Password: "tblack"),
-        User(Name: "Amanda James", Email: "ajames@gmail.com", Phone: "(231) 234-4589", Password: "ajames"),
-        User(Name: "Stacey Morgan", Email: "smorgan@gmail.com", Phone: "(345) 556-5372", Password: "smorgan")
+        User(name: "Tessie Black", email: "tblack@gmail.com", phone: "(226) 234-7896", password: "tblack"),
+        User(name: "Amanda James", email: "ajames@gmail.com", phone: "(231) 234-4589", password: "ajames"),
+        User(name: "Stacey Morgan", email: "smorgan@gmail.com", phone: "(345) 556-5372", password: "smorgan")
     ]
         
     override func viewDidLoad() {
@@ -34,17 +34,17 @@ class ViewController: UIViewController {
         
         let email = emailText.text!
         let password = passwordText.text!
-        var currentUser = User(Name: "", Email: "", Phone: "", Password: "")
+        var currentUser = User(name: "", email: "", phone: "", password: "")
         
         if(!email.isEmpty && !password.isEmpty)
         {
             var isValidUser = false;
             
             users.forEach { user in
-                if(user.Email == email && user.Password == password)
+                if(user.email == email && user.password == password)
                 {
                     isValidUser = true
-                    currentUser = User(Name: user.Name, Email: user.Email, Phone: user.Phone, Password: user.Password)
+                    currentUser = User(name: user.name, email: user.email, phone: user.phone, password: user.password)
                 }
             }
             
