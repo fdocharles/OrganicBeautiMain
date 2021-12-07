@@ -17,7 +17,7 @@ class NewProductTableViewCell: UITableViewCell {
     
     func setup(with product: Product){
         newProductNameLabel.text = product.brand
-        newProductImage.image = product.image
+        newProductImage.image = UIImage(named :product.image)
         newProductLabel.text = product.title
         newProductPriceLabel.text = product.price
     }

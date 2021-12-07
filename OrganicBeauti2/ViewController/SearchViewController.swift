@@ -69,7 +69,17 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout {
 
 extension SearchViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(products[indexPath.row])
+        let selProductName = filteredProducts[indexPath.row].title
+        let selProductBrand = filteredProducts[indexPath.row].brand
+        let selProductPrice = filteredProducts[indexPath.row].price
+        let selProductImage = filteredProducts[indexPath.row].image
+        
+        selectedProducts = Product(title: selProductName, brand: selProductBrand, price: selProductPrice, image: selProductImage)
+        let encoder = PropertyListEncoder()
+        if let encodedName = try? encoder.encode(selectedProducts) {
+            UserDefaults.standard.set(encodedName, forKey: "selProduct")
+        }
+        
     }
 }
 
