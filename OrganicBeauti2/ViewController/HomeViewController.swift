@@ -19,6 +19,7 @@ class HomeViewController: UIViewController , UITableViewDelegate{
         tableView.delegate = self
     }
 
+   
 }
 
 extension HomeViewController: UITableViewDataSource{
@@ -29,7 +30,16 @@ extension HomeViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewProductTableViewCell", for: indexPath) as! NewProductTableViewCell
         cell.setup(with: newProducts[indexPath.row])
+        cell.addCartButton.tag = indexPath.row
+        cell.addCartButton.addTarget(self , action: #selector(addToCartButton), for: .touchUpInside)
         return cell
+    }
+    
+    @objc func addToCartButton(sender: UIButton) {
+        let indexpath1 = IndexPath(row: sender.tag, section: 0)
+        cart += [newProducts[indexpath1.row]]
+        let cvc = self.storyboard?.instantiateViewController(identifier: "CartViewController") as! CartViewController
+        self.navigationController?.pushViewController(cvc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

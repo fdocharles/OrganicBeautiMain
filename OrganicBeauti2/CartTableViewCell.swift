@@ -28,4 +28,6 @@ class CartTableViewCell: UITableViewCell {
         cartProductImage.image = UIImage(named: product.image)
     }
     
+    
+    
 }

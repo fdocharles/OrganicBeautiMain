@@ -22,13 +22,13 @@ class CartViewController: UIViewController , UITableViewDelegate {
     
     extension CartViewController: UITableViewDataSource{
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 5
+            return cart.count
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = cartTableView.dequeueReusableCell(withIdentifier: "CartTableViewCell", for: indexPath) as! CartTableViewCell
             
-            cell.setup(with: newProducts[indexPath.row])
+            cell.setup(with: cart[indexPath.row])
             return cell
         }
         

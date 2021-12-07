@@ -14,6 +14,8 @@ class ProductCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var productBrandLabel: UILabel!
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var productPriceLabel: UILabel!
+    @IBOutlet weak var buyNowButton: UIButton!
+    @IBOutlet weak var addCartButton: UIButton!
     
     func setup(with product: Product){
         productTitleLabel.text = product.title

@@ -14,6 +14,7 @@ class NewProductTableViewCell: UITableViewCell {
     @IBOutlet weak var newProductPriceLabel: UILabel!
     @IBOutlet weak var newProductNameLabel: UILabel!
     @IBOutlet weak var newProductImage: UIImageView!
+    @IBOutlet weak var addCartButton: UIButton!
     
     func setup(with product: Product){
         newProductNameLabel.text = product.brand

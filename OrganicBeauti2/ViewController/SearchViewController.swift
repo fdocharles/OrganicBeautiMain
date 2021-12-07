@@ -57,7 +57,33 @@ extension SearchViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCollectionViewCell", for: indexPath) as! ProductCollectionViewCell
         cell.setup(with: filteredProducts[indexPath.row])
+        cell.addCartButton.tag = indexPath.row
+        cell.addCartButton.addTarget(self , action: #selector(addToCartButton), for: .touchUpInside)
+        cell.buyNowButton.tag = indexPath.row
+        cell.buyNowButton.addTarget(self , action: #selector(buyNow), for: .touchUpInside)
         return cell
+    }
+    
+    @objc func addToCartButton(sender: UIButton) {
+        let indexpath1 = IndexPath(row: sender.tag, section: 0)
+        cart += [filteredProducts[indexpath1.row]]
+        print(cart)
+        let cvc = self.storyboard?.instantiateViewController(identifier: "CartViewController") as! CartViewController
+        self.navigationController?.pushViewController(cvc, animated: true)
+    }
+    
+    @objc func buyNow(sender: UIButton) {
+        let indexpath1 = IndexPath(row: sender.tag, section: 0)
+        sub = filteredProducts[indexpath1.row].price
+        //let sub1 = Double(sub){
+            //print(sub1)
+            //subTotal += sub1
+            
+       // }
+        
+        //print(subTotal)
+        //let cvc = self.storyboard?.instantiateViewController(identifier: "CartViewController") as! CartViewController
+        //self.navigationController?.pushViewController(cvc, animated: true)
     }
 }
 

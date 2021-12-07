@@ -66,3 +66,9 @@ let newProducts: [Product] = [
 ]
 
 var selectedProducts = Product(title: "Clay Masque" ,brand: "Sukin" , price: "$30.99" , image: "DETOXIFYING CLAY MASQUE  SUPER GREENS 100ML")
+
+var cart: [Product] = []
+
+var subTotal:Double = 0.00
+var sub: String = ""
+    
