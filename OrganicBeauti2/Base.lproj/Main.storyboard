@@ -612,6 +612,14 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="aAC-qF-hk6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKA-AQ-v7Z">
+                                <rect key="frame" x="36" y="765" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="yiq-mK-NTV" kind="presentation" modalPresentationStyle="fullScreen" id="rNO-uF-ux1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99215686270000003" green="0.93333333330000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1205,6 +1213,7 @@
                                 <rect key="frame" x="24" y="748" width="370" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1529411765" green="0.3294117647" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Confirm Order"/>
                             </button>
@@ -1212,11 +1221,17 @@
                         <color key="backgroundColor" red="0.99215686270000003" green="0.93333333330000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="8m5-5n-gPr"/>
                     </view>
+                    <navigationItem key="navigationItem" id="KAv-tt-j67"/>
                     <connections>
                         <outlet property="addNewCardButton" destination="QHG-lj-rsG" id="hgT-HE-Syx"/>
                         <outlet property="confirmOrderButton" destination="aQE-Ft-5Eu" id="KHF-oa-Npb"/>
+                        <outlet property="discountValueLbl" destination="lxV-hL-vz3" id="Bb3-rz-jkr"/>
                         <outlet property="paymentMethodBackgorundWrapper" destination="7jd-VR-kc4" id="29V-92-afS"/>
                         <outlet property="shippingAddressBackgroundWrapper" destination="xQZ-2i-V7R" id="yrh-Yc-pD9"/>
+                        <outlet property="shippingValueLbl" destination="PXo-hr-Zbc" id="nP6-Hg-QN4"/>
+                        <outlet property="subTotalValueLbl" destination="LXG-aZ-5vk" id="Svk-Rx-ve4"/>
+                        <outlet property="taxValueLbl" destination="Jit-Jz-q2w" id="Ywq-qH-naE"/>
+                        <outlet property="totalValueLbl" destination="R5q-sE-pDZ" id="Ykl-JB-1M7"/>
                         <outlet property="totalsBackgroundWrapper" destination="MUl-8b-Vg3" id="k7f-DF-9Bq"/>
                     </connections>
                 </viewController>
