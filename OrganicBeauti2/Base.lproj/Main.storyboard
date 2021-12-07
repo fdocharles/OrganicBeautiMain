@@ -1094,6 +1094,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flm-Iw-03U">
+                                        <rect key="frame" x="227" y="50" width="139" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.1529411765" green="0.3294117647" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Add New Address"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
@@ -1172,7 +1179,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$ 0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5q-sE-pDZ">
-                                        <rect key="frame" x="320" y="123" width="45" height="18"/>
+                                        <rect key="frame" x="317" y="123" width="45" height="18"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
@@ -1224,9 +1231,12 @@
                     <navigationItem key="navigationItem" id="KAv-tt-j67"/>
                     <connections>
                         <outlet property="addNewCardButton" destination="QHG-lj-rsG" id="hgT-HE-Syx"/>
+                        <outlet property="address1Lbl" destination="l1i-A3-zLr" id="fbO-3q-aWs"/>
+                        <outlet property="cityProvinceLbl" destination="NVC-3Z-fj1" id="nSl-0c-P7O"/>
                         <outlet property="confirmOrderButton" destination="aQE-Ft-5Eu" id="KHF-oa-Npb"/>
                         <outlet property="discountValueLbl" destination="lxV-hL-vz3" id="Bb3-rz-jkr"/>
                         <outlet property="paymentMethodBackgorundWrapper" destination="7jd-VR-kc4" id="29V-92-afS"/>
+                        <outlet property="postalCodeLbl" destination="yxv-f1-eCE" id="LCA-EU-OFd"/>
                         <outlet property="shippingAddressBackgroundWrapper" destination="xQZ-2i-V7R" id="yrh-Yc-pD9"/>
                         <outlet property="shippingValueLbl" destination="PXo-hr-Zbc" id="nP6-Hg-QN4"/>
                         <outlet property="subTotalValueLbl" destination="LXG-aZ-5vk" id="Svk-Rx-ve4"/>

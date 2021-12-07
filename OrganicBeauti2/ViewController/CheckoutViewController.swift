@@ -26,6 +26,10 @@ class CheckoutViewController: UIViewController {
     @IBOutlet weak var totalValueLbl: UILabel!
     
     
+    @IBOutlet weak var address1Lbl: UILabel!
+    @IBOutlet weak var cityProvinceLbl: UILabel!
+    @IBOutlet weak var postalCodeLbl: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +65,16 @@ class CheckoutViewController: UIViewController {
             }
             
             tax = subTotal * (13.00/100.00)
+            
+            //ShippingAddress
+            address1Lbl.text = decodedOrder.shippingAddress.address1
+            cityProvinceLbl.text = "\(decodedOrder.shippingAddress.city) \(decodedOrder.shippingAddress.provinceCode)"
+            postalCodeLbl.text = decodedOrder.shippingAddress.postalCode
+            
+            address1Lbl.isHidden = address1Lbl.text!.isEmpty
+            cityProvinceLbl.isHidden = cityProvinceLbl.text!.isEmpty
+            
+            
         }
         
         
@@ -70,6 +84,9 @@ class CheckoutViewController: UIViewController {
         shippingValueLbl.text = "$ \(shipping)"
         discountValueLbl.text = "$ \(discount)"
         totalValueLbl.text = "$ \(subTotal+tax+shipping+discount)"
+        
+        
+        
     }
     
 }
