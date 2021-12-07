@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CurrentSession {
+struct CurrentSession: Codable {
     var User : User
     var Order: Order
 }

@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Order {
+struct Order : Codable{
     var OrderItems: [OrderItem]
 }
