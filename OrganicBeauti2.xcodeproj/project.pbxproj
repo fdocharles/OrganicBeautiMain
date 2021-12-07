@@ -21,7 +21,10 @@
 		75903A5D275AC4FA0054FDF4 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75903A5C275AC4FA0054FDF4 /* OrderItem.swift */; };
 		75909AAB275F06FE000F76F4 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75909AAA275F06FE000F76F4 /* CheckoutViewController.swift */; };
 		759DEE5E2759B42A0018A288 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DEE5D2759B42A0018A288 /* SignUpViewController.swift */; };
+		75BADD53275F84F3006D0DA7 /* NewAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BADD52275F84F3006D0DA7 /* NewAddressViewController.swift */; };
 		75D609EC275F56CF00DD0D28 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D609EB275F56CF00DD0D28 /* Address.swift */; };
+		75D609EE275F5EEE00DD0D28 /* AddNewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D609ED275F5EEE00DD0D28 /* AddNewCardViewController.swift */; };
+		75D609F0275F5F8600DD0D28 /* PaymentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D609EF275F5F8600DD0D28 /* PaymentCard.swift */; };
 		B424E069275F0B8E00950985 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424E068275F0B8E00950985 /* CartViewController.swift */; };
 		B424E06B275F0DD100950985 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424E06A275F0DD100950985 /* CartTableViewCell.swift */; };
 		B4A0F867275DDF1F0057E9B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A0F866275DDF1F0057E9B4 /* HomeViewController.swift */; };
@@ -49,7 +52,10 @@
 		75903A5C275AC4FA0054FDF4 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
 		75909AAA275F06FE000F76F4 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		759DEE5D2759B42A0018A288 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		75BADD52275F84F3006D0DA7 /* NewAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddressViewController.swift; sourceTree = "<group>"; };
 		75D609EB275F56CF00DD0D28 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		75D609ED275F5EEE00DD0D28 /* AddNewCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCardViewController.swift; sourceTree = "<group>"; };
+		75D609EF275F5F8600DD0D28 /* PaymentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCard.swift; sourceTree = "<group>"; };
 		B424E068275F0B8E00950985 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		B424E06A275F0DD100950985 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		B4A0F866275DDF1F0057E9B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -117,7 +123,9 @@
 				B4B4116D275BF91800E43385 /* ItemViewViewController.swift */,
 				B4A0F866275DDF1F0057E9B4 /* HomeViewController.swift */,
 				75909AAA275F06FE000F76F4 /* CheckoutViewController.swift */,
+				75D609ED275F5EEE00DD0D28 /* AddNewCardViewController.swift */,
 				B424E068275F0B8E00950985 /* CartViewController.swift */,
+				75BADD52275F84F3006D0DA7 /* NewAddressViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -130,6 +138,7 @@
 				75903A5A275AC4D40054FDF4 /* Order.swift */,
 				75903A5C275AC4FA0054FDF4 /* OrderItem.swift */,
 				75D609EB275F56CF00DD0D28 /* Address.swift */,
+				75D609EF275F5F8600DD0D28 /* PaymentCard.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -213,14 +222,17 @@
 				B4D16874275AB934009C192B /* Product.swift in Sources */,
 				B4D16872275AB6AC009C192B /* SearchViewController.swift in Sources */,
 				B4D16870275AB608009C192B /* ProductCollectionViewCell.swift in Sources */,
+				75BADD53275F84F3006D0DA7 /* NewAddressViewController.swift in Sources */,
 				753CDAE92757E10400FFAA87 /* AccountViewController.swift in Sources */,
 				75903A5B275AC4D40054FDF4 /* Order.swift in Sources */,
+				75D609EE275F5EEE00DD0D28 /* AddNewCardViewController.swift in Sources */,
 				75903A57275AC3B20054FDF4 /* CurrentSession.swift in Sources */,
 				75903A59275AC3EE0054FDF4 /* User.swift in Sources */,
 				753CDAD22757E05D00FFAA87 /* AppDelegate.swift in Sources */,
 				75909AAB275F06FE000F76F4 /* CheckoutViewController.swift in Sources */,
 				B4A0F867275DDF1F0057E9B4 /* HomeViewController.swift in Sources */,
 				75903A5D275AC4FA0054FDF4 /* OrderItem.swift in Sources */,
+				75D609F0275F5F8600DD0D28 /* PaymentCard.swift in Sources */,
 				753CDADC2757E05D00FFAA87 /* OrganicBeauti2.xcdatamodeld in Sources */,
 				753CDAD42757E05D00FFAA87 /* SceneDelegate.swift in Sources */,
 				B424E069275F0B8E00950985 /* CartViewController.swift in Sources */,
