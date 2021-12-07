@@ -645,6 +645,12 @@
                         <viewLayoutGuide key="safeArea" id="DDf-m8-CGq"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="gN3-Eo-g2N"/>
+                    <connections>
+                        <outlet property="emailTxt" destination="VaG-OJ-xbH" id="caq-L0-Gl9"/>
+                        <outlet property="nameTxt" destination="5Rm-t2-kYg" id="vR0-Gh-aC7"/>
+                        <outlet property="passwordTxt" destination="rSe-9d-UJh" id="JgI-Ta-ffT"/>
+                        <outlet property="phoneTxt" destination="uA1-Ij-mbH" id="xvJ-qU-yt7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wv1-8x-mHR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
