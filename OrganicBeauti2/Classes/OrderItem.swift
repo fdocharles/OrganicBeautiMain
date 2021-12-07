@@ -9,7 +9,7 @@
 import Foundation
 
 struct OrderItem: Codable {
-    var Name: String
-    var Qty: String
-    var Price: Decimal
+    var name: String
+    var qty: Int
+    var price: Double
 }

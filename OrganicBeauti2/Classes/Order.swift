@@ -9,5 +9,7 @@
 import Foundation
 
 struct Order : Codable{
-    var OrderItems: [OrderItem]
+    var orderItems: [OrderItem]
+    var paymentMethod: String
+    var shippingAddress: Address
 }

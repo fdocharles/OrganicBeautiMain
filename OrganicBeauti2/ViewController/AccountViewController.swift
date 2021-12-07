@@ -10,27 +10,38 @@ import UIKit
 
 class AccountViewController: UIViewController {
 
+    
+    @IBOutlet weak var nameTxt: UITextField!
+    @IBOutlet weak var phoneTxt: UITextField!
+    @IBOutlet weak var emailTxt: UITextField!
+    @IBOutlet weak var passwordTxt: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    
+        //Hide keyboard on focusout
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
+        
+        LoadCurrentUser()
     }
     
     
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func LoadCurrentUser() -> Void {
+       let decoder = PropertyListDecoder()
+        
+        if let storedObject = UserDefaults.standard.object(forKey: "currentUser") as? Data,
+            let decodedUser = try? decoder.decode(User.self, from: storedObject)
+        {
+            nameTxt.text = decodedUser.name
+            phoneTxt.text = decodedUser.phone
+            emailTxt.text = decodedUser.email
+            passwordTxt.text = decodedUser.password
+        }
     }
-    */
-
+    
+    
 }
 
 
