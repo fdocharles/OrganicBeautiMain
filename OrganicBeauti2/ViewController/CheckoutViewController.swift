@@ -11,7 +11,7 @@ import UIKit
 class CheckoutViewController: UIViewController {
 
     
-    @IBOutlet weak var shippingAddressBackgroundWrapper: UIView!
+    /*@IBOutlet weak var shippingAddressBackgroundWrapper: UIView!
     @IBOutlet weak var totalsBackgroundWrapper: UIView!
     @IBOutlet weak var paymentMethodBackgorundWrapper: UIView!
     @IBOutlet weak var addNewCardButton: UIButton!
@@ -33,6 +33,31 @@ class CheckoutViewController: UIViewController {
     
     
     @IBOutlet weak var paymentMethodCardLbl: UILabel!
+ */
+    
+    
+    
+    @IBOutlet weak var shippingAddressBackgroundWrapper: UIView!
+    @IBOutlet weak var totalsBackgroundWrapper: UIView!
+    @IBOutlet weak var paymentMethodBackgorundWrapper: UIView!
+    @IBOutlet weak var addNewCardButton: UIButton!
+    @IBOutlet weak var confirmOrderButton: UIButton!
+    
+    
+    @IBOutlet weak var subTotalValueLbl: UILabel!
+    @IBOutlet weak var taxValueLbl: UILabel!
+    @IBOutlet weak var shippingValueLbl: UILabel!
+    @IBOutlet weak var discountValueLbl: UILabel!
+    @IBOutlet weak var totalValueLbl: UILabel!
+    
+    @IBOutlet weak var address1Lbl: UILabel!
+    @IBOutlet weak var cityProvinceLbl: UILabel!
+    @IBOutlet weak var postalCodeLbl: UILabel!
+    
+    
+    @IBOutlet weak var paymentMethodCardLbl: UILabel!
+    
+    
     
     
     override func viewDidLoad() {
