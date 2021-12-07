@@ -20,6 +20,8 @@
 		75903A5B275AC4D40054FDF4 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75903A5A275AC4D40054FDF4 /* Order.swift */; };
 		75903A5D275AC4FA0054FDF4 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75903A5C275AC4FA0054FDF4 /* OrderItem.swift */; };
 		759DEE5E2759B42A0018A288 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DEE5D2759B42A0018A288 /* SignUpViewController.swift */; };
+		B424E069275F0B8E00950985 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424E068275F0B8E00950985 /* CartViewController.swift */; };
+		B424E06B275F0DD100950985 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424E06A275F0DD100950985 /* CartTableViewCell.swift */; };
 		B4A0F867275DDF1F0057E9B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A0F866275DDF1F0057E9B4 /* HomeViewController.swift */; };
 		B4B4116E275BF91800E43385 /* ItemViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B4116D275BF91800E43385 /* ItemViewViewController.swift */; };
 		B4D16870275AB608009C192B /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D1686F275AB608009C192B /* ProductCollectionViewCell.swift */; };
@@ -44,6 +46,8 @@
 		75903A5A275AC4D40054FDF4 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		75903A5C275AC4FA0054FDF4 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
 		759DEE5D2759B42A0018A288 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B424E068275F0B8E00950985 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		B424E06A275F0DD100950985 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		B4A0F866275DDF1F0057E9B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B4B4116D275BF91800E43385 /* ItemViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewViewController.swift; sourceTree = "<group>"; };
 		B4D1686F275AB608009C192B /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 				B4D1686F275AB608009C192B /* ProductCollectionViewCell.swift */,
 				B4D16873275AB934009C192B /* Product.swift */,
 				B4D16877275B3A28009C192B /* NewProductTableViewCell.swift */,
+				B424E06A275F0DD100950985 /* CartTableViewCell.swift */,
 			);
 			path = OrganicBeauti2;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 				B4D16871275AB6AC009C192B /* SearchViewController.swift */,
 				B4B4116D275BF91800E43385 /* ItemViewViewController.swift */,
 				B4A0F866275DDF1F0057E9B4 /* HomeViewController.swift */,
+				B424E068275F0B8E00950985 /* CartViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 				B4B4116E275BF91800E43385 /* ItemViewViewController.swift in Sources */,
 				759DEE5E2759B42A0018A288 /* SignUpViewController.swift in Sources */,
 				753CDAD62757E05D00FFAA87 /* ViewController.swift in Sources */,
+				B424E06B275F0DD100950985 /* CartTableViewCell.swift in Sources */,
 				B4D16874275AB934009C192B /* Product.swift in Sources */,
 				B4D16872275AB6AC009C192B /* SearchViewController.swift in Sources */,
 				B4D16870275AB608009C192B /* ProductCollectionViewCell.swift in Sources */,
@@ -208,6 +215,7 @@
 				75903A5D275AC4FA0054FDF4 /* OrderItem.swift in Sources */,
 				753CDADC2757E05D00FFAA87 /* OrganicBeauti2.xcdatamodeld in Sources */,
 				753CDAD42757E05D00FFAA87 /* SceneDelegate.swift in Sources */,
+				B424E069275F0B8E00950985 /* CartViewController.swift in Sources */,
 				B4D16878275B3A28009C192B /* NewProductTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
