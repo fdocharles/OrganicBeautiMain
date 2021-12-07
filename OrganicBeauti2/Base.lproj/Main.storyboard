@@ -188,6 +188,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="SignUp:" destination="uRI-aD-B8D" eventType="touchUpInside" id="mRG-IW-XAt"/>
                                     <segue destination="eFj-He-P3f" kind="presentation" modalPresentationStyle="fullScreen" id="ial-db-YHF"/>
                                 </connections>
                             </button>
@@ -264,7 +265,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="xTb-1j-9IS"/>
                     <connections>
-                        <outlet property="signupButton" destination="s4I-1w-vd8" id="vgS-QS-Vcx"/>
+                        <outlet property="emailTxt" destination="FsB-GM-vxW" id="13U-mR-k2r"/>
+                        <outlet property="nameTxt" destination="QQx-de-4Df" id="GSs-mT-liH"/>
+                        <outlet property="passwordTxt" destination="bPW-qb-tZ8" id="o3n-ko-Jf0"/>
+                        <outlet property="phoneTxt" destination="Lnq-dO-jsc" id="VIe-HG-ASu"/>
+                        <outlet property="signupButton" destination="s4I-1w-vd8" id="cWE-or-5sK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cEi-RP-tbR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1040,7 +1045,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fhY-bc-IUk"/>
-        <segue reference="wDy-89-c7z"/>
+        <segue reference="ial-db-YHF"/>
         <segue reference="aAC-qF-hk6"/>
     </inferredMetricsTieBreakers>
 </document>
