@@ -43,6 +43,7 @@ class CheckoutViewController: UIViewController {
     @IBOutlet weak var addNewCardButton: UIButton!
     @IBOutlet weak var confirmOrderButton: UIButton!
     
+    @IBOutlet weak var addNewAddressButton: UIButton!
     
     @IBOutlet weak var subTotalValueLbl: UILabel!
     @IBOutlet weak var taxValueLbl: UILabel!
@@ -50,7 +51,7 @@ class CheckoutViewController: UIViewController {
     @IBOutlet weak var discountValueLbl: UILabel!
     @IBOutlet weak var totalValueLbl: UILabel!
     
-    @IBOutlet weak var address1Lbl: UILabel!
+    @IBOutlet weak var address1Ll: UILabel!
     @IBOutlet weak var cityProvinceLbl: UILabel!
     @IBOutlet weak var postalCodeLbl: UILabel!
     
@@ -64,6 +65,7 @@ class CheckoutViewController: UIViewController {
         super.viewDidLoad()
 
         shippingAddressBackgroundWrapper.layer.cornerRadius = 15.0
+        addNewAddressButton.layer.cornerRadius = 15.0
         totalsBackgroundWrapper.layer.cornerRadius = 15.0
         paymentMethodBackgorundWrapper.layer.cornerRadius = 15.0
         addNewCardButton.layer.cornerRadius = 10.0
@@ -100,11 +102,11 @@ class CheckoutViewController: UIViewController {
             tax = subTotal * (13.00/100.00)
             
             //ShippingAddress
-            address1Lbl.text = decodedOrder.shippingAddress.address1
+            address1Ll.text = decodedOrder.shippingAddress.address1
             cityProvinceLbl.text = "\(decodedOrder.shippingAddress.city) \(decodedOrder.shippingAddress.provinceCode)"
             postalCodeLbl.text = decodedOrder.shippingAddress.postalCode
             
-            address1Lbl.isHidden = address1Lbl.text!.isEmpty
+            address1Ll.isHidden = address1Ll.text!.isEmpty
             cityProvinceLbl.isHidden = cityProvinceLbl.text!.isEmpty
             
             paymentMethodCardLbl.text = "**** **** **** \(decodedOrder.paymentMethod.cardNumber.suffix(4))"

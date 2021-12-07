@@ -54,9 +54,7 @@ class ViewController: UIViewController {
             if(isValidUser == true)
             {
                 print(currentUser)
-                //performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
-                
-                //prepare(for: <#T##UIStoryboardSegue#>, sender: <#T##Any?#>)
+                StoreCurrentUser(user : currentUser)
             }
             else
             {
@@ -82,6 +80,15 @@ class ViewController: UIViewController {
         // show the alert
         self.present(alert, animated: true, completion: nil)
         
+    }
+    
+    
+    func StoreCurrentUser(user: User) -> Void {
+        let encoder = PropertyListEncoder()
+        if let encodedOrder = try? encoder.encode(user)
+        {
+            UserDefaults.standard.set(encodedOrder, forKey: "currentUser")
+        }
     }
 }
 

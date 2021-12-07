@@ -12,9 +12,6 @@ class AccountViewController: UIViewController {
 
     
     @IBOutlet weak var nameTxt: UITextField!
-    @IBOutlet weak var phoneTxt: UITextField!
-    @IBOutlet weak var emailTxt: UITextField!
-    @IBOutlet weak var passwordTxt: UITextField!
     
     
     override func viewDidLoad() {
@@ -29,16 +26,26 @@ class AccountViewController: UIViewController {
     
     
     func LoadCurrentUser() -> Void {
-       let decoder = PropertyListDecoder()
+              let decoder = PropertyListDecoder()
         
         if let storedObject = UserDefaults.standard.object(forKey: "currentUser") as? Data,
             let decodedUser = try? decoder.decode(User.self, from: storedObject)
         {
-            nameTxt.text = decodedUser.name
-            phoneTxt.text = decodedUser.phone
-            emailTxt.text = decodedUser.email
-            passwordTxt.text = decodedUser.password
+            
+            print("******")
+            print(decodedUser)
+            var tempnameTxt = decodedUser.name
+            var tempphoneTxt = decodedUser.phone
+            var tempemailTxt = decodedUser.email
+            var temppasswordTxt = decodedUser.password
+            
+            
+            nameTxt.text = tempnameTxt
+            //phoneTxt.text = tempphoneTxt
+            //emailTxt.text = tempemailTxt
+            //passwordTxt.text = temppasswordTxt
         }
+
     }
     
     
