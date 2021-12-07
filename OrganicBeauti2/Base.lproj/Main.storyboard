@@ -285,7 +285,7 @@
                     <connections>
                         <segue destination="B6W-8Y-ryB" kind="relationship" relationship="viewControllers" id="Bpw-f3-Dec"/>
                         <segue destination="2xX-Pt-FTT" kind="relationship" relationship="viewControllers" id="Agj-Il-SqS"/>
-                        <segue destination="I6T-1D-pmX" kind="relationship" relationship="viewControllers" id="8cW-TD-Bdn"/>
+                        <segue destination="Vk0-1A-LUF" kind="relationship" relationship="viewControllers" id="8cW-TD-Bdn"/>
                         <segue destination="Wq5-2f-ybT" kind="relationship" relationship="viewControllers" id="cTs-bm-zsB"/>
                     </connections>
                 </tabBarController>
@@ -479,11 +479,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="hxj-9b-39C"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="cart" catalog="system" id="Xis-df-w62"/>
+                    <navigationItem key="navigationItem" id="lSv-wS-Pod"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FrI-Wh-HQZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4981.159420289855" y="878.57142857142856"/>
+            <point key="canvasLocation" x="5889.8550724637689" y="878.57142857142856"/>
         </scene>
         <!--userAccount-->
         <scene sceneID="I6z-eX-8Ar">
@@ -633,7 +633,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wv1-8x-mHR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5689.8550724637689" y="878.57142857142856"/>
+            <point key="canvasLocation" x="6600.0000000000009" y="878.57142857142856"/>
         </scene>
         <!--home-->
         <scene sceneID="Ejy-Ig-Qpe">
@@ -985,6 +985,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="05g-uK-OvV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3368.115942028986" y="878.57142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XXf-Qy-MEa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Vk0-1A-LUF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="cart" catalog="system" id="Xis-df-w62"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7bh-DI-gmb">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="I6T-1D-pmX" kind="relationship" relationship="rootViewController" id="CBj-md-tdz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RTF-zc-3Gm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4979.7101449275369" y="878.57142857142856"/>
         </scene>
     </scenes>
     <resources>
